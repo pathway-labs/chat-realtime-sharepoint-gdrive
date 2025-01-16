@@ -15,7 +15,7 @@ In this repository, we showcase the integration of LlamaIndex with Pathway's Vec
 
 ## Why Pathway?
 
-Pathway is a data processing framework allowing easy building of advanced data processing pipelines. Among others, it offers [Pathway Vector Store](https://pathway.com/developers/user-guide/llm-xpack/vectorstore_pipeline/), a document indexing solution that is always up to date without the need for traditional ETL pipelines, which are needed in regular VectorDBs. It can monitor several data sources (files, S3 folders, cloud storage) and provide the latest information to your LLM application. 
+Pathway is a data processing framework allowing easy building of advanced data processing pipelines. Among others, it offers [Pathway Document Store](https://pathway.com/developers/user-guide/llm-xpack/docs-indexing/), a document indexing solution that is always up to date without the need for traditional ETL pipelines, which are needed in regular VectorDBs. It can monitor several data sources (files, S3 folders, cloud storage) and provide the latest information to your LLM application. 
 
 This means you do not need to worry about:
 - Checking files to see if there are any changes
@@ -136,7 +136,7 @@ The demo is hosted on Streamlit Community Cloud [here](https://chat-realtime-sha
 Clone this repository to your machine.
 Create a `.env` file under the root folder, this will store your OpenAI API key, demo uses the OpenAI GPT model to answer questions.
 
-You need access to a running Pathway Vector Store pipeline. For this demo, a public instance is provided that reads documents in [Google Drive](https://drive.google.com/drive/u/2/folders/1cULDv2OaViJBmOfG5WB0oWcgayNrGtVs) and [Sharepoint](https://navalgo.sharepoint.com/:f:/s/ConnectorSandbox/EgBe-VQr9h1IuR7VBeXsRfIBuOYhv-8z02_6zf4uTH8WbQ?e=YmlA05). However, it is easy to run our own locally. Please see the [vector store guide](https://pathway.com/developers/templates/vectorstore_pipeline) and also [Pathway Deployment](https://pathway.com/developers/user-guide/deployment/docker-deployment). 
+You need access to a running Pathway Vector Store pipeline. For this demo, a public instance is provided that reads documents in [Google Drive](https://drive.google.com/drive/u/2/folders/1cULDv2OaViJBmOfG5WB0oWcgayNrGtVs) and [Sharepoint](https://navalgo.sharepoint.com/:f:/s/ConnectorSandbox/EgBe-VQr9h1IuR7VBeXsRfIBuOYhv-8z02_6zf4uTH8WbQ?e=YmlA05). However, it is easy to run our own locally. Please see the [document store guide](https://pathway.com/developers/templates/docs-indexing) and also [Pathway Deployment](https://pathway.com/developers/user-guide/deployment/docker-deployment). 
 
 Open a terminal and run `streamlit run ui.py`. This will prompt you a URL, simply click and open the demo.
 
